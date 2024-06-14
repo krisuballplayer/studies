@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="laskin.js"></script>
+  <link rel="stylesheet" href="laskin.css">
+  <title>Laskin</title>
+</head>
+<body>
+  <div class="laskin">
+  <form name="laskin">
+    <h2>Laskin</h2>
+    <input type="text" name="tulosnaytto" id="tulosnaytto" disabled>
+    <br>
+    <input type="button" value="AC" onclick="tyhjennaNaytto()">
+    <input type="button" value="%" onclick="lisaaNayttoon('%')">
+    <input type="button" value="/" onclick="lisaaNayttoon('/')">
+    <br>
+    <input type="button" value="1" onclick="lisaaNayttoon('1')">
+    <input type="button" value="2" onclick="lisaaNayttoon('2')">
+    <input type="button" value="3" onclick="lisaaNayttoon('3')">
+    <input type="button" value="x" onclick="lisaaNayttoon('*')">
+    <br>
+    <input type="button" value="4" onclick="lisaaNayttoon('4')">
+    <input type="button" value="5" onclick="lisaaNayttoon('5')">
+    <input type="button" value="6" onclick="lisaaNayttoon('6')">
+    <input type="button" value="-" onclick="lisaaNayttoon('-')">
+    <br>
+    <input type="button" value="7" onclick="lisaaNayttoon('7')">
+    <input type="button" value="8" onclick="lisaaNayttoon('8')">
+    <input type="button" value="9" onclick="lisaaNayttoon('9')">
+    <input type="button" value="+" onclick="lisaaNayttoon('+')">
+    <br>
+    <input type="button" value="0" onclick="lisaaNayttoon('0')">
+    <input type="button" value="." onclick="lisaaNayttoon('.')">
+    <input type="button" value="⬅" onclick="removeText()">
+    <input type="button" value="=" onclick="laskeTulos()">
+    <br>
+  </form>
+</div>
+
+</body>
+</html>

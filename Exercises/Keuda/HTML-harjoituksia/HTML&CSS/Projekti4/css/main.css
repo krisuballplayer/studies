@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto@&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {    
+    font-family: "Roboto", sans-serif; 
+    color: aliceblue;
+    line-height: 1.5rem;
+    background-image:url(../images/taustakuva.jpg);      
+    min-height: 100vh;
+    min-width: 500px;
+}
+
+.main-container{
+  width: 80%;
+  background-color: hsla(209, 61%, 52%, 0.555);
+  margin: 30px auto;
+  padding: 30px;
+}
+
+fieldset {
+  padding: 10px;
+}
+
+textarea {
+  width: 70%;
+}
+
+button {
+  font-size: 120%;
+}
+
+
+
+

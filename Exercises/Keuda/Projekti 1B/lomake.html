@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilmoittautumislomake</title>
+    <link rel="stylesheet" href="CSS/tyyli.css">
+    <script type="text/javascript" src="myjava.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <h1 id="otsikko">Ilmottautumislomake kokkauskurssille</h1>
+        
+        <p id="kuvaus">Täytä lomake huolellisesti ilmoittautuaksesi.</p>
+       <br>
+       <form id="kyselylomake" onsubmit="naytaVastaukset(); return false;">
+           <p>
+               <label for="nimi">Etunimi:</label>
+               <input type="text" name="nimi" id="nimi" placeholder="Jan" autofocus minlength="3" required>
+           </p>
+           <p>
+               <label for="email">Sähköposti:</label>
+               <input type="email" name="email" id="email" placeholder="kokki@gmail.com" required>
+           </p>
+           <p>
+               <label for="ika">Ikä:</label>
+               <input type="number" name="ika" id="ika" placeholder="18" min="18" max="99">
+           </p>
+           <p>
+               <label for="maa">Valitse maa:</label>
+               <br>
+               <select name="maa" id="maa" required>
+                   <optgroup label="Eurooppa">
+                       <option value="Suomi">Suomi</option>
+                       <option value="Viro">Viro</option>
+                       <option value="Italia">Italia</option>
+                       <option value="Ranska">Ranska</option>
+                       <option value="Turkki">Turkki</option>
+                       <option value="Saksa">Saksa</option>
+                   </optgroup>
+                   <optgroup label="Aasia">
+                       <option value="Thaimaa">Thaimaa</option>
+                       <option value="Japani">Japani</option>
+                       <option value="Vietnam">Vietnam</option>
+                   </optgroup>
+                   <optgroup label="Pohjois-Amerikka">
+                       <option value="Mexico">Mexico</option>
+                       <option value="Yhdysvallat">Yhdysvallat</option>
+                       <option value="Kuuba">Kuuba</option>
+                   </optgroup>
+               </select>
+           </p>
+           <fieldset>
+               <legend>Oletko aikaisemmin osallistunut kokkauskurssille?</legend>
+               <input type="radio" name="vastaus1" id="kylla" value="Kyllä" required>
+               <label for="kylla">Kyllä</label>
+               <input type="radio" name="vastaus1" id="en" value="En" required>
+               <label for="en">En</label>
+           </fieldset>
+           <br>
+           <fieldset>
+               <legend>Oletko?</legend>
+               <input type="radio" name="vastaus2" id="ammattilainen" value="ammattilainen" required>
+               <label for="ammattilainen">Ammattilainen</label>
+               <input type="radio" name="vastaus2" id="opiskelija" value="opiskelija" required>
+               <label for="opiskelija">Opiskelija</label>
+               <input type="radio" name="vastaus2" id="harrastaja" value="harrastaja" required>
+               <label for="harrastaja">Harrastaja</label>
+           </fieldset>
+           <br>
+           <fieldset>
+               <legend>Onko sinulla ruoka-allergioita?</legend>
+               <input type="checkbox" name="allergia" id="kanamuna" value="Kanamuna">
+               <label for="kanamuna">Kanamuna</label>
+               <input type="checkbox" name="allergia" id="porkkana" value="Porkkana">
+               <label for="porkkana">Porkkana</label>
+               <input type="checkbox" name="allergia" id="tomaatti" value="Tomaatti">
+               <label for="tomaatti">Tomaatti</label>
+               <input type="checkbox" name="allergia" id="omena" value="Omena">
+               <label for="omena">Omena</label>
+               <input type="checkbox" name="allergia" id="keliakia" value="Keliakia">
+           </fieldset>
+           <br>
+           <fieldset>
+               <legend>Lisätietoja</legend>
+               <label for="viesti" style="padding-left:15px;">Sinun viesti:</label>
+               <br>
+               <textarea name="viesti" id="viesti" cols="30" rows="15" placeholder="Kirjoita viesti tähän..."></textarea>
+           </fieldset>
+           <br>
+           <button type="submit" value="submit">Lähetä</button>
+       </form>
+
+</body>
+</html>

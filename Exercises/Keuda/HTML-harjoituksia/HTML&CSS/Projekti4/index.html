@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talviurheilupäivä</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="myjava.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <header>
+        <h1>Ilmoittatumislomake Talvipäivälle</h1>
+        <br>
+    <p>
+        <ul>
+            <li>Yrityksen järjestämälle talvipäivälle Messilään pitää ilmoittautua viimeistään ti 10.1.2023.</li>
+            <li>Tapahtuma on maksuton.</li>
+            <li>Työnantaja järjestää kuljetuksen tarvitseville.</li>
+            <li>Välineitä voi vuokrata paikan päällä.</li>
+            <li>Tapahtumaan kuuluu myös ruoka.</li>
+            <li>Lisätietoja tapahtumasta Liisalta numerosta 0500-777 777 tai sähköpostitse tapahtumat@yritys.fi.</li>
+        </ul>
+    </p>
+        </header>
+    <hr>
+    <br>
+        <form name= "lomake">
+
+            <p><form action="#" method="get">
+                <label for="eNimi">Etunimi:</label>
+                <input type="text" name="eNimi" id="eNimi" placeholder="Krister" autofocus>
+            </p>
+
+            <p><form action="#" method="get">
+                <label for="sNimi">Sukunimi:</label>
+                <input type="text" name="sNimi" id="sNimi" placeholder="Kaattari">
+            </p>
+
+            <p><form action="#" method="get">
+                <label for="puhNumero">Puhelinnumero:</label>
+                <input type="tel" name="puhNumero" id="puhNumero" placeholder="0400968673">
+            </p>
+
+            <p><form action="#" method="get">
+                <label for="sPosti">Sähköposti:</label>
+                <input type="email" name="sPosti" id="sPosti" placeholder="krister.kaattari@inet.fi">
+            </p>
+
+            <p><form action="#" method="get">
+                <label for="oMaara">Osallistujamäärä:</label>
+                <input type="number" name="oMaara" id="oMaara" placeholder="3">
+            </p>
+            <br>
+
+            <fieldset>
+                <Legend>Tarvitseko kyydin?</Legend>
+                <p>
+                    <input type="radio" name="kyyti" id="kyyti" value="kylla"> 
+                    <label for="kylla">Kyllä</label>      
+                </p>
+
+                <p>
+                    <input type="radio" name="kyyti" id="kyyti" value="ei"> 
+                    <label for="ei">Ei</label>      
+                </p>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <Legend>Mitä välineitä haluat vuokrata paikan päältä?</Legend>
+                <p>
+                    <input type="checkbox" name="valineet" id="kypara" value="kypara">
+                    <label for="kypara">Kypärän</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" name="valineet" id="laskettelu" value="laskettelu">
+                    <label for="laskettelu">Laskettelu</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" name="valineet" id="murtomaa" value="murtomaa">
+                    <label for="laskettelu">Murtomaa</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" name="valineet" id="pulkka" value="pulkka">
+                    <label for="pulkka">Pulkka</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" name="valineet" id="lKengat" value="lKengat">
+                    <label for="lKengat">Lumikengät</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="valineet" id="enT" value="enT">
+                    <label for="eNt">En tarvitse</label>
+                </p>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Viestisi (esim. erityisruokavaliosta):</legend>       
+                <label for="viesti"></label>
+                <textarea name="viesti" id="viesti" cols="30" rows="10" placeholder="Kirjoita tähän...HUOM! Max. 300 merkkiä!"></textarea>
+                <br> 
+            </fieldset>
+            <br>
+
+            
+            <button type="button" onclick="laheta()">Lähetä</button>
+        </form>
+
+        <p id="yv"></p>
+       
+    </div>
+    
+
+</body>
+</html>

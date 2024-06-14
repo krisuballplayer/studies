@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rekisteröidy</title>
+    <link href='https://fonts.googleapis.com/css?family=Fugaz One' rel='stylesheet'>
+    <link rel="stylesheet" href="ota_yhteytta.css">
+    <script src="muu.js"></script>
+</head>
+<body>
+<div class="forms">
+    <form name ="register" action="#" method="get">
+        <h2>Rekisteröidy</h2>
+        <p>
+        <label for="nimi"><b>Käyttäjänimi:</b></label>
+        <input type="text" id="nimi" name="nimi" autofocus><br>
+    </p>
+        <label for="salasana"><b>Salasana:</b></label>
+        <input type="password" id="salasana" name="salasana">
+        <hr>
+        <!-- Dropdown valikko -->
+        <label for="sukupuoli"><b>Sukupuoli:</b><br>
+            <select id="sukupuoli" name="lemmikki">
+                <option value="mies">Mies</option>
+                <option value="nainen">Nainen</option>
+                <option value="muu">Muu</option>
+            </select><br>
+        <!-- Valikko 2 -->
+        <label for="valikko2"><b>Olen:</b><br>
+            <input type="radio" id="opiskelija" name="valinta2" value="opiskelija">
+            <label for="opiskelija">Opiskelija</label>
+            <input type="radio" id="tyossakayva" name="valinta2" value="tyossakayva">
+            <label for="tyossakayva">Työssäkäyvä</label>
+            <input type="radio" id="tyoton" name="valinta2" value="tyoton">
+            <label for="tyoton">Työtön</label><br>
+        <!-- Valikko 3 -->
+        <label for="valikko3"><b>Osaan:</b><br>
+            <input type="checkbox" id="html" name="valinta3" value="html">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="valinta3" value="css">
+            <label for="css">CSS</label>
+            <input type="checkbox" id="js" name="valinta3" value="js">
+            <label for="js">JavaScript</label>
+            <input type="checkbox" id="muu2" name="valinta3" value="muu2" onclick="toggleText2()">
+            <label for="muu2">Muu, mikä?</label>
+            <input type="text" id="muu2-text" style="display: none;" placeholder="Mikä?"><br>
+        <!-- Palaute -->
+        <hr>
+        <label for="bio"><b>Kerro itsestäsi:</b></label><br>
+        <textarea id="bio" name="bio" rows="6" cols="55" placeholder="Kerro jotain.."></textarea><br>
+        <button type="button" onclick="validateForm()">Rekisteröidy</button>
+    </form>
+</div>
+</body>
+</html>

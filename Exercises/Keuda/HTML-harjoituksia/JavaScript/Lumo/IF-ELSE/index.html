@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silmukoita</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <script type="text/javascript" src="myjava.js"></script>
+</head>
+
+<body>
+    <main class="container">
+
+        <div class = "box">
+            <p>IE01</p>
+            <form> 
+                <p>
+                    <label for="luku1">Anna luku 1:</label>
+                    <input type="text" id="luku1" name="luku1">
+                </p>    
+                <p>
+                    <label for="luku2">Anna luku 2:</label>
+                    <input type="text" id="luku2" name="luku2">
+                </p>              
+                
+                <br>
+                
+                <button type="button" onclick="vertaa()">Vertaa</button>
+              </form>
+              <br>
+            <p id="vastaus1"></p>       
+        </div>
+
+        <div class = "box">
+            <p>IE02</p>
+            <form> 
+                <p>
+                    <label for="luku3">Anna luku 1:</label>
+                    <input type="text" id="luku3" name="luku3">
+                </p>    
+                <p>
+                    <label for="luku4">Anna luku 2:</label>
+                    <input type="text" id="luku4" name="luku4">
+                </p>
+                <p>
+                    <label for="luku5">Anna luku 3:</label>
+                    <input type="text" id="luku5" name="luku5">
+                </p>                
+                
+                <br>
+                
+                <button type="button" onclick="vertaa2()">Vertaa</button>
+              </form>
+              <br>
+            <p id="vastaus2"></p>
+        </div>
+
+        <div class = "box">
+            <p>IE03</p>    
+            <form> 
+                <p>
+                    <label for="luku6">Anna luku:</label>
+                    <input type="text" id="luku6" name="luku6">
+                </p>                
+                
+                <br>
+                
+                <button type="button" onclick="selvita()">Selvitä</button>
+              </form>
+              <br>
+            <p id="vastaus3"></p>
+        </div>
+
+        <div class = "box">
+            <p>IE04</p>    
+            <form> 
+                <p>
+                    <label for="luku7">Anna luku:</label>
+                    <input type="text" id="luku7" name="luku7">
+                </p>                
+                
+                <br>
+                
+                <button type="button" onclick="jaollinen()">Selvitä</button>
+              </form>
+              <br>
+            <p id="vastaus4"></p>
+        </div>
+
+        <div class = "box">
+            <p>IE05</p>
+            <p>Onko karkausvuosi?</p>
+            <form>
+                <p>
+                    <label for="vuosi">Anna vuosiluku:</label>
+                    <input type="text" name="vuosi" id="vuosi"> 
+                </p>
+
+                <br>
+
+                <button type="button" onclick="karkaako()">Tarkista</button>
+            </form>
+            <br>          
+          <p id="vastaus5"></p>
+        </div>
+        
+        <div class = "box"> 
+            <p>IE06</p>           
+            <form> 
+               <p>
+                    <label for="luku8">Anna luku:</label>
+                    <input type="text" id="luku8" name="luku8">
+                </p>                
+                    
+                    <br>
+                    
+                    <button type="button" onclick="parita()">Tarkista</button>
+                  </form>
+                  <br>
+                <p id="vastaus6"></p>
+        </div>
+
+        <div class = "box">
+            <p>IE07</p>
+            <form> 
+                <p>
+                     <label for="char">Anna numero, kirjain tai erikoismerkki:</label>
+                     <input type="text" id="char" name="char">
+                 </p>                
+                     
+                     <br>
+                     
+                     <button type="button" onclick="tsekkaa()">Tarkista</button>
+                   </form>
+                 
+            <script>
+                function tsekkaa() {
+                    let merkki = document.getElementById("char").value;                 
+                    
+                    let x = /[a-öA-Ö]/;
+                    let z = /[0-9]/;
+                    let uusiIkkuna = window.open("vastauksia.html");
+
+                    if (merkki.match(x)) {
+                        uusiIkkuna.document.write("Se on kirjain!");
+                    }
+                    else {
+                        uusiIkkuna.document.write("Se on joku muu, mutta ei kirjain!");
+                    }  
+                }
+            </script>           
+        </div>
+
+        <div class = "box">
+            <p>IE08</p>
+            <form> 
+                <p>
+                     <label for="char2">Anna yksi kirjain:</label>
+                     <input type="text" id="char2" name="char2">
+                 </p>                
+                     
+                     <br>
+                     
+                     <button type="button" onclick="kumpi()">Tarkista</button>
+            </form>
+                 
+            <script>
+                function kumpi() {
+                    let merkki = document.getElementById("char2").value;
+                    let uusiIkkuna = window.open("vastauksia.html");
+
+                    if (merkki.match(/[aeiouyäö]/i)) {
+                        uusiIkkuna.document.write("Se on vokaali!");
+                    }
+                    else if (merkki.match(/[bcdfghjklmnpqrstvwxz]/i)) {
+                        uusiIkkuna.document.write("Se on konsonantti");
+                    }
+                    else {
+                        uusiIkkuna.document.write("Nyt et syöttänyt kirjainta!");
+                    }
+                }
+            </script>           
+        </div>
+
+        <div class = "box">
+            <p>IE09</p>
+            <form> 
+                <p>
+                     <label for="char3">Anna numero, kirjain tai erikoismerkki:</label>
+                     <input type="text" id="char3" name="char3">
+                 </p>                
+                     
+                     <br>
+                     
+                     <button type="button" onclick="check()">Tarkista</button>
+                   </form>
+                 
+            <script>
+                function check() {
+                    let merkki = document.getElementById("char3").value;                 
+                    
+                    //Only the english alphabet, just for fun!
+                    let x = /\W/;
+                    let z = /[0-9]/;
+                    let uusiIkkuna = window.open("vastauksia.html");
+
+                    if (merkki.match(x) != null) {
+                    uusiIkkuna.document.write("Se on erikoismerkki tai sitten olet vahingossa antanut kirjaimen ä, å tai ö!");
+                    }
+                    else if (merkki.match(z)) {
+                    uusiIkkuna.document.write("Se on numero!");
+                    }
+                    else {
+                    uusiIkkuna.document.write("Se on kirjain tai alaviivamerkki!");
+                    }  
+                }
+            </script>           
+        </div>
+
+        <div class = "box">
+            <p>IE10</p>
+            <form> 
+                <p>
+                     <label for="char4">Anna iso tai pieni kirjai:</label>
+                     <input type="text" id="char4" name="char4">
+                 </p>                
+                     
+                     <br>
+                     
+                     <button type="button" onclick="koko()">Tarkista</button>
+                   </form>
+                 
+            <script>
+                function koko() {
+                    let merkki = document.getElementById("char4").value;              
+                    let x = /[a-öA-Ö]/;
+                    let uusiIkkuna = window.open("vastauksia.html");
+
+                    if (merkki.match(x) && merkki == merkki.toUpperCase()) {
+                    uusiIkkuna.document.write("Se on iso kirjain!");
+                    }
+                    else if (merkki.match(x) && merkki == merkki.toLowerCase()) {
+                    uusiIkkuna.document.write("Se on pieni kirjain!");
+                    }
+                    else {
+                    uusiIkkuna.document.write("Et syöttänyt kirjainta!");
+                    }  
+                }
+            </script>           
+        </div>
+
+        <div class = "box"> 
+            <p>IE11</p>           
+            <form> 
+               <p>
+                    <label for="tulot">Anna tulot:</label>
+                    <input type="text" id="tulot" name="tulot">
+                </p>  
+                <p>
+                    <label for="menot">Anna menot:</label>
+                    <input type="text" id="menot" name="menot">
+                </p>               
+                    
+                    <br>
+                    
+                    <button type="button" onclick="tulos()">Tarkista</button>
+                  </form>
+                  <br>
+                <p id="vastaus6"></p>
+
+                <script>
+                    function tulos() {
+                        let x = parseInt(document.getElementById("tulot").value); 
+                        let y = parseInt(document.getElementById("menot").value); 
+                        let uusiIkkuna = window.open("vastauksia.html");
+                        let summa = x - y;
+    
+                        if (summa < 0) {
+                        uusiIkkuna.document.write("Teit tappiota " + summa + " euroa!");
+                        }
+                        else if (summa > 0) {
+                        uusiIkkuna.document.write("Yrityksesi teki " + summa + " euroa voittoa!");
+                        }
+                        else {
+                        uusiIkkuna.document.write("Teit ns. plussa miinus tuloksen, eli pyöreän NOLLAN!");
+                        }  
+                    }
+                </script> 
+        </div>
+
+        <div class = "box"> 
+            <p>IE12</p>
+            <p>Anna kokeiden pisteet (0-100).</p>           
+            <form> 
+               <p>
+                    <label for="matikka">Matematiikka:</label>
+                    <input type="text" id="matikka" name="matikka">
+                </p>  
+                <p>
+                    <label for="fyssa">Fysiikka:</label>
+                    <input type="text" id="fyssa" name="fyssa">
+                </p> 
+                <p>
+                    <label for="äikkä">Äidinkieli:</label>
+                    <input type="text" id="äikkä" name="äikkä">
+                </p> 
+                <p>
+                    <label for="ruåtti">Ruotsi:</label>
+                    <input type="text" id="ruåtti" name="ruåtti">
+                </p> 
+                <p>
+                    <label for="enkku">Englanti:</label>
+                    <input type="text" id="enkku" name="enkku">
+                </p>               
+                    
+                    <br>
+                    
+                    <button type="button" onclick="arvio()">Tarkista</button>
+                </form>
+                  <br>
+                  
+               
+                  <script>
+                    function arvio() {
+                        let aineetTaulukko = [["Matikka ", parseInt(document.getElementById("matikka").value)], ["Fysiikka ", 
+                        parseInt(document.getElementById("fyssa").value)], ["Äidinkieli ", parseInt(document.getElementById("äikkä").value)],
+                        ["Ruotsi ", parseInt(document.getElementById("ruåtti").value)], ["Englanti ", parseInt(document.getElementById("enkku").value)]]; 
+                        let uusiIkkuna = window.open("vastauksia.html");
+                        let rivinvaihto = "<br>";
+                       
+    
+                        for (var i = 0; i < aineetTaulukko.length; i++) {
+
+                        if (aineetTaulukko[i][1] >= 90) {
+                            uusiIkkuna.document.write("Pisteet: " + aineetTaulukko[i][1] + " " +   aineetTaulukko[i][0] + ": K5" + rivinvaihto);
+                        }
+                        else if (aineetTaulukko[i][1] >= 80) {
+                            uusiIkkuna.document.write("Pisteet: " + aineetTaulukko[i][1] + " " +   aineetTaulukko[i][0] + ": H4" + rivinvaihto);
+                        }
+                        else if (aineetTaulukko[i][1] >= 70) {
+                            uusiIkkuna.document.write("Pisteet: " + aineetTaulukko[i][1] + " " +   aineetTaulukko[i][0] + ": H3" + rivinvaihto);
+                        }
+                        else if (aineetTaulukko[i][1] >= 60) {
+                            uusiIkkuna.document.write("Pisteet: " + aineetTaulukko[i][1] + " " +   aineetTaulukko[i][0] + ": T2" + rivinvaihto);
+                        }
+                        else if (aineetTaulukko[i][1] >= 50) {
+                            uusiIkkuna.document.write("Pisteet: " + aineetTaulukko[i][1] + " " +   aineetTaulukko[i][0] + ": T1" + rivinvaihto);
+                        }
+                        else {
+                            uusiIkkuna.document.write("Pisteet: " + aineetTaulukko[i][1] + " " +   aineetTaulukko[i][0] + ": Hylätty" + rivinvaihto);
+                        }
+                    }
+                    uusiIkkuna.document.write(rivinvaihto + rivinvaihto + "Yli 90 pistettä = K5" + rivinvaihto +  "yli 80 pistettä = H4" + rivinvaihto + "yli 70 pistettä = H3" + rivinvaihto + "yli 60 pistettä = T2" + rivinvaihto + "yli 50 pistettä = T1" + rivinvaihto + "muutoin hylätty");
+                }
+                </script> 
+        </div>
+
+       
+        
+    </main>
+    
+
+</body>
+</html>
+
+        
+            
+       
+
+
+        
+    </main>
+    
+
+</body>
+</html>
+
+
+
+        
+       

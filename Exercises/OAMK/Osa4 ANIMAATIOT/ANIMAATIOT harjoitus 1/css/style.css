@@ -1,0 +1,31 @@
+div {
+    position: relative;
+    left: 150px;
+    top: 150px;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    align-items: center;
+    border-radius: 5px;
+}
+
+p {
+    flex: 1;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+@keyframes animaatio {
+    from {background-color: cadetblue;} to {background-color: darkblue;padding: 5px;}
+}
+
+div:hover {
+    animation-name: animaatio;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+}

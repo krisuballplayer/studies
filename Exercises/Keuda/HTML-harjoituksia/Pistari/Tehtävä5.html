@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tehtävä 5</title>
+</head>
+<body>
+  
+  <form > 
+    <label for="luku">Anna luku:</label>
+    <input type="number" id="luku" name="luku">
+    <button type="button" onclick="myFunction()">Lähetä</button>
+  </form>
+   
+
+<p id="vastaus"></p>
+
+<script>
+  function myFunction() {  
+    let muuttuja = parseInt(document.getElementById("luku").value);
+    let LMuuttuja = 0;    
+
+    for (let i = 1; i <= 10; i++) {
+     LMuuttuja = muuttuja * i;
+     muuttuja = LMuuttuja;            
+    }      
+
+    document.getElementById("vastaus").innerHTML = LMuuttuja;
+  }
+</script>    
+
+</body>
+</html>

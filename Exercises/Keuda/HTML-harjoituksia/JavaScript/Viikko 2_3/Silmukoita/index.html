@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silmukoita</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <script type="text/javascript" src="myjava.js"></script>
+</head>
+
+<body>
+    <main class="container">
+
+        <div class = "box">
+            <form> 
+                <p>
+                    <label for="luku1">Anna parillinen luku:</label>
+                    <input type="text" id="luku1" name="luku1">
+                </p>                
+                
+                <br>
+                
+                <button type="button" onclick="parillinen()">Tulosta parilliset</button>
+              </form>
+              <br>
+            <p id="vastaus1"></p>
+       
+        </div>
+
+        <div class = "box">
+            <form> 
+                <p>
+                    <label for="teksti1">Anna sana:</label>
+                    <input type="text" id="teksti1" name="teksti1">
+                </p>                
+                
+                <br>
+                
+                <button type="button" onclick="lisaakirjain()">Uusi sana</button>
+              </form>
+              <br>
+            <p id="vastaus2"></p>
+
+        </div>
+
+        <div class = "box">    
+            <form> 
+                <p>
+                    <label for="teksti2">Anna sana:</label>
+                    <input type="text" id="teksti2" name="teksti2">
+                </p>                
+                
+                <br>                 
+                
+                <button type="button" onclick="tarkasta()">Löytyykö ö-kirjain?</button>
+            </form>   
+            <br> 
+            <p id="vastaus3"></p>
+        
+        </div>
+
+        <div class = "box">    
+            <form> 
+                <p>
+                    <label for="luku2">Anna luku:</label>
+                    <input type="text" id="luku2" name="luku2">
+                </p>                
+                
+                <br>                 
+                
+                <button type="button" onclick="kertoma()">Lähetä</button>
+            </form>   
+            <br> 
+            <p id="vastaus4"></p>
+        
+        </div>
+
+        <div class = "box">
+           <section>
+                <p>Paina nappia niin näet jotain ihmeellistä!</p>  
+                <br>             
+                
+                <p><button type="button" onclick="check()">Paina!</button></p>
+                <br>
+         
+                <p id="vastaus5"></p>
+            </section>
+
+        </div>
+
+        <div class = "box">
+            <section>
+                <p>Listaa!</p>  
+                <br>             
+                     
+                <p><button type="button" onclick="listaa()">10 Ensimmäistä</button></p>
+                <br>
+              
+                <p id="vastaus6"></p>
+            </section>
+     
+        </div>
+        
+        <div class = "box">
+            <section>
+                <p>Laske yhteen 1 - 10</p>  
+                <br>             
+                     
+                <p><button type="button" onclick="yhteenlasku()">Laske yhteen</button></p>
+                <br>
+              
+                <p id="vastaus7"></p>
+            </section>
+        </div>
+
+        <div class = "box">
+        <form> 
+            <p>
+                <label for="kLuku">Anna korotettava luku:</label>
+                <input type="text" id="kLuku" name="kLuku">
+            </p> 
+            <p>
+                <label for="potenssi">Anna potenssi:</label>
+                <input type="text" id="potenssi" name="potenssi">
+            </p>               
+            
+            <br>
+            
+            <button type="button" onclick="kaava()">Laske</button>
+          </form>
+          <br>
+        <p id="vastaus8"></p>
+        </div>
+
+
+
+
+
+        <div class = "box">
+            <form> 
+                <p>
+                    <label for="nro1">Anna luku:</label>
+                    <input type="text" id="nro1" name="nro1">
+                </p> 
+                <p>
+                    <label for="nro2">Anna luku:</label>
+                    <input type="text" id="nro2" name="nro2">
+                </p> 
+                <p>
+                    <label for="nro3">Anna luku:</label>
+                    <input type="text" id="nro3" name="nro3">
+                </p> 
+                <p>
+                    <label for="nro4">Anna luku:</label>
+                    <input type="text" id="nro4" name="nro4">
+                </p> 
+                <p>
+                    <label for="nro5">Anna luku:</label>
+                    <input type="text" id="nro5" name="nro5">
+                </p> 
+                <br>
+                
+                <button type="button" onclick="piensuur()">Etsi</button>
+              </form>
+              <br>
+            <p id="vastaus9"></p>
+        </div>
+
+        <div class = "box">
+            <form> 
+                <p>
+                    <label for="SSana">Anna salasana:</label>
+                    <input type="text" id="SSana" name="SSana">
+                </p>                
+                
+                <br>                 
+                
+                <button type="button" onclick="muuta()">Tee uusi salasana</button>
+            </form>   
+            <br> 
+            <p id="vastaus10"></p>
+            <p id="vastaus11"></p>
+        </div>
+
+
+
+
+
+        
+        <div class = "box">
+            <form> 
+                <p>
+                    <label for="pieniNro">Anna numero:</label>
+                    <input type="text" id="pieniNro" name="pieniNro">
+                </p> 
+
+                <p>
+                    <label for="isoNro">Anna isompi numero:</label>
+                    <input type="text" id="isoNro" name="isoNro">
+                </p> 
+                              <br>
+                
+                <button type="button" onclick="viimeinen()">Tarkasta & Laske</button>
+              </form>
+              <br>
+            <p id="vastaus12"></p>
+            <p id="vastaus13"></p>
+
+        </div>
+        
+    </main>
+    
+
+</body>
+</html>
+
+
+
+        
+       

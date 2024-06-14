@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ehtolauseita</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <script type="text/javascript" src="myjava.js"></script>
+</head>
+
+<body>
+    <main class="container">
+
+        <div class = "box">
+            <form> 
+                <p><label for="luku1">Anna luku:</label>
+                <input type="text" id="luku1" name="luku1"></p>
+                <p><label for="luku2">Anna luku:</label>
+                <input type="text" id="luku2" name="luku2"></p>
+                <p><label for="luku3">Anna luku:</label>
+                <input type="text" id="luku3" name="luku3"></p>
+                
+                <br>
+                
+                <button type="button" onclick="jarjesta()">Järjestä</button>
+              </form>
+              <br>
+        <p id="vastaus1"></p>
+        <p id="vastaus2"></p>
+        </div>
+        
+        <div class = "box">
+            <form> 
+                <p><label for="luku4">Anna luku:</label>
+                <input type="text" id="luku4" name="luku4"></p>
+                <p><label for="luku5">Anna luku:</label>
+                <input type="text" id="luku5" name="luku5"></p>
+                <p><label for="luku6">Anna luku:</label>
+                <input type="text" id="luku6" name="luku6"></p>
+                <p><label for="luku7">Anna luku:</label>
+                <input type="text" id="luku7" name="luku7"></p>
+                <p><label for="luku8">Anna luku:</label>
+                <input type="text" id="luku8" name="luku8"></p>
+
+                <br>
+                
+                <button type="button" onclick="etsisuurin()">Etsi Suurin</button>
+              </form>
+              <br>
+        <p id="vastaus3"></p>             
+        </div>
+
+        <div class = "box">
+            <p>Onko antamasi luku pariton tai parillinen?</p>
+            <br>
+            <form> 
+                <p><label for="luku9">Anna luku:</label>
+                <input type="text" id="luku9" name="luku9"></p>
+                               
+                <br>
+                
+                <button type="button" onclick="parittaja()">Tarkista</button>
+              </form>
+              <br>
+        <p id="vastaus4"></p>  
+        </div>
+
+        <div class = "box">       
+            <form> 
+                <p><label for="luku10">Minkä ikäinen olet?</label>
+                <input type="text" id="luku10" name="luku10"></p>
+                               
+                <br>
+                
+                <button type="button" onclick="tarkistaja()">Lähetä</button>
+              </form>
+              <br>
+        <p id="vastaus5"></p>
+        </div>
+
+
+
+
+        <div class = "box">
+            <p>Ohjelma kääntää sinulle tekstin "Hei maailma!".</p>
+            <br>
+            <form>
+                <p>
+                <label>Valitse kieli:</label>
+                    <select id="kieli" name="kieli">  
+                    <option value="Englanti">Englanti</option> 
+                    <option value="Ruotsi">Ruotsi</option> 
+                    <option value="Espanja">Espanaja</option> 
+                    </select>
+                </p>
+
+               <br>    
+                             
+               <button type="button" onclick="kaantaja()">Käännä</button>
+            </form>
+            <br>
+               <p id="vastaus6"></p>
+        </div>
+
+    </main>
+
+
+    
+</body>
+</html>

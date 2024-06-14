@@ -1,0 +1,16 @@
+h2 {
+    color: #71bf45;
+    font-family: "Arial";
+}
+
+p { 
+    text-indent: 30px;
+    font-family: "Verdana";
+    width: 1000px
+}
+
+a {
+    text-decoration: none;
+    color: #000099;
+    font-weight: bold ;
+}

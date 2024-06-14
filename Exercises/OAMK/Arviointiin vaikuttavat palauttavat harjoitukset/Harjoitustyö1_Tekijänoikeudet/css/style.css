@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 15px 0;
+    background-color: #777;
+    color: #fff;
+}
+
+
+
+.wrapper-main {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 3px solid gold
+}
+
+.header-main {
+    width: 100%;
+    border-bottom: 3px solid gold;
+    background-color: rgb(197, 8, 8);
+    display: flex;
+    flex-direction: row; /* Ei pakollinen. Flex on oletuksena row.*/
+    justify-content: space-between;
+    align-content: normal;
+    align-items: center;
+}
+
+.header-main-nav {
+    width: fit-content;
+    height: 100%;
+}
+
+.header-main-nav ul {
+    list-style: none;
+    margin-left: 30px;
+}
+
+.header-main-nav ul li {
+    display: inline;
+    float: left;
+    line-height: 80px;
+}
+
+.header-main-nav ul li a {
+    color: #fff;
+    padding: 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.header-main-nav ul li a:hover {
+    color: #000;
+    font-size: 1.1rem;
+}
+
+.header-main-logo {
+    display: flex;
+    width: 150px;
+    height: 100%;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-main-logo img {
+    height: 70%;
+}
+
+main {
+    background-color: #000;
+    height: 80vh;
+    overflow-x: hidden; 
+    overflow-y: auto; 
+}
+
+h1, p {
+    line-height: 1.5em;
+    color: #fff;
+    padding: 20px;
+    text-align: justify;
+}
+article {
+    padding: 15px;
+
+}
+
+article ul {
+    margin-left: 30px;
+    
+}
+
+article ul li {
+    padding: 5px;
+}
+
+article ul a {
+    color: #fff;
+}
+
+footer {
+    background-color: rgb(197, 8, 8);
+    border-top: 3px solid gold
+}
+
+address {
+    margin-left: 20px;
+    padding: 10px 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper-main {
+    width: 100%;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .wrapper-main {
+    width: 100%;
+    }
+}
+
+
+
+
+
+

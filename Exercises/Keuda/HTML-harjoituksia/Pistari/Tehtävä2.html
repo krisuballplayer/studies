@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tehtävä 2</title>
+</head>
+<body>
+
+  <form>  
+    <label for="numero">Anna viikonpäivän numero:</label>
+    <input type="number" id="numero" name="numero">
+    <button type="button" onclick="myFunction()">Lähetä</button>
+</form>
+
+<p id="vastaus"></p>
+
+<script>
+  function myFunction() {
+    let x = document.getElementById("numero").value;
+      let text;
+      if (x == 1) {
+      text = "Maanantai";
+      }
+      else if (x == 2) {
+      text = "Tiistai";
+      }
+      else if (x == 3) {
+      text = "Keskiviikko";
+      }
+      else if (x == 4) {
+      text = "Torstai";
+      }
+      else if (x == 5) {
+      text = "Perjantai";
+      }
+      else if (x == 6) {
+      text = "Lauantai";
+      }
+      else {
+      text ="Sunnuntai";
+      }
+  
+    document.getElementById("vastaus").innerHTML = text;
+  };
+</script>
+
+</body>
+</html>

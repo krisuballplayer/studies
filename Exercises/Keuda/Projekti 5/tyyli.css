@@ -1,0 +1,53 @@
+/*resetointi*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(90, 86, 78);
+}
+
+h1, p {
+    color: white;
+    text-align: center;
+    margin: 25px;
+}
+
+#pelialusta {
+    margin:0px auto;
+    width: 800px;
+    height: 760px;
+    background: #a8bba0;
+    border: black solid 2px;;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+/*luo kortin ulkonäön*/
+.kortti {
+    height: 160px;
+    width: 160px;
+    background: rgb(90, 86, 78);
+    border-radius: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.kortti:hover {
+    transform: scale(1.05);/*suurentaa korttia 1.05 kertaiseksi 0.3 sekunissa, kun kursori kortin päällä*/  
+}
+
+
+
+
+

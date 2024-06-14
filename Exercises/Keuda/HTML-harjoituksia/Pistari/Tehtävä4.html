@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tehtävä 4</title>
+</head>
+<body>
+
+    <form>
+        <p><label for="luku1">Anna luku:</label>
+        <input type="text" name="luku1" id="luku1"> 
+        </p>
+
+        <p><label for="luku2">Anna luku:</label>
+        <input type="text" name="luku2" id="luku2"> 
+        </p>
+
+        <p><label for="luku3">Anna luku:</label>
+        <input type="text" name="luku3" id="luku3"> 
+        </p>
+
+        <p><label for="luku4">Anna luku:</label>
+        <input type="text" name="luku4" id="luku4"> 
+        </p>
+
+        <p><label for="luku5">Anna luku:</label>
+        <input type="text" name="luku5" id="luku5"> 
+        </p>
+    
+        <button type="button" onclick="myFunction()">Lähetä</button>
+    </form>
+
+<p id="vastaus1"></p>
+<p id="vastaus2"></p>
+
+<script>
+function myFunction() {
+  let summa = 0; 
+  let ka = 0;
+  
+  let summa1 = parseInt(document.getElementById("luku1").value);
+  let summa2 = parseInt(document.getElementById("luku2").value);
+  let summa3 = parseInt(document.getElementById("luku3").value);
+  let summa4 = parseInt(document.getElementById("luku4").value);
+  let summa5 = parseInt(document.getElementById("luku5").value);
+
+  summa = summa1 + summa2 + summa3 + summa4 + summa5;
+  ka = summa / 5;
+
+  document.getElementById("vastaus1").innerHTML = "Lukujen summa on: " + summa;
+  document.getElementById("vastaus2").innerHTML = "Lukujen keskiarvo on: " + ka;
+}
+</script>
+    
+</body>
+</html>

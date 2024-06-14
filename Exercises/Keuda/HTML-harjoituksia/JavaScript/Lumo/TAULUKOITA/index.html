@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taulukoita</title>
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+
+<body>
+
+    <div class = "box">
+        <p>T04</p>
+        <article>
+            <p>Lisää uusi jäsen ryhmään.</p>  
+            
+            <p>
+                <label for="nimi">Anna nimi: </label>
+                <input type="text" id="nimi" name="nimi">
+            </p> 
+                 
+             <button type="button" onclick="lisaa()">Lisää</button>
+        </article>
+             
+        <script>
+               function lisaa() {
+                let x = document.getElementById("nimi").value; 
+                let taulukko = ["Kalle", "Minna", "Kirsi", "Anne", "Juho"];
+                let uusiIkkuna = window.open("vastauksia.html");
+
+                    taulukko.push(x);
+
+                    uusiIkkuna.document.write("Päivitetty jäsentaulukko: " + taulukko);
+                }
+        </script>           
+    </div>
+
+    <div class = "box">
+        <p>T05</p>
+        <article>
+            <p>Anna kaksi nimeä!</p>  
+            
+            <p>
+                <label for="nimi2">Anna nimi: </label>
+                <input type="text" id="nimi2" name="nimi2">
+            </p> 
+
+            <p>
+                <label for="nimi3">Anna nimi: </label>
+                <input type="text" id="nimi3" name="nimi3">
+            </p> 
+                 
+             <button type="button" onclick="yhdista()">Yhdistä</button>
+        </article>
+             
+        <script>
+               function yhdista() {
+                let x = document.getElementById("nimi2").value; 
+                let y = document.getElementById("nimi3").value; 
+                let taulukko1 = [];
+                let taulukko2 = [];
+                let yhdistettyTaulukko=[];
+                let rivinvaihto = "<br>";
+                let uusiIkkuna = window.open("vastauksia.html");
+
+                    taulukko1.push(x);
+                    taulukko2.push(y);
+                    yhdistettyTaulukko = taulukko1.concat(taulukko2);
+                    uusiIkkuna.document.write("Taulukko 1: " + taulukko1 + rivinvaihto);
+                    uusiIkkuna.document.write("Taulukko 2: " + taulukko2 + rivinvaihto);
+                    uusiIkkuna.document.write("Yhdistetty taulukko: " + yhdistettyTaulukko);
+                }
+        </script>           
+    </div>
+
+    <div class = "box">
+        <p>T06</p>
+        <article>
+            <p>Tarkastetaan mitkä seuraavista luvuista (1, 2, 3, 4, 5, 6, 7, 8, 9, 10) on jaollinen kolmella!</p>  
+            
+                 
+             <button type="button" onclick="tarkasta()">Tarkista</button>
+        </article>
+             
+        <script>
+               function tarkasta() {
+
+                    const x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+                    let jaolliset = [];
+                    const rivinvaihto ="<br>";
+                    let uusiIkkuna = window.open("vastauksia.html");
+                    
+                    for (i = 0; i < x.length; i++) {
+
+                        if (x[i] % 3 == 0) {
+                            jaolliset.push(x[i]);
+                        }
+                    }
+                    
+                        uusiIkkuna.document.write("Tämän taulukon luvuista: " + x + rivinvaihto);
+                        uusiIkkuna.document.write("Seuraavat luvut on jaollisia kolmella: " + jaolliset);
+                }
+        </script>           
+    </div>
+
+    <div class = "box">
+        <p>T07</p>
+        <article>
+            <p>Pisteään seuraavat luvut suurusjärjestykseen pienimmästä suurempaan (12, 2, 33, 414, 6, 5, 73, 8, 999, 103)!</p>  
+            
+                 
+             <button type="button" onclick="jarjesta()">Jarjesta</button>
+        </article>
+             
+        <script>
+               function jarjesta() {
+
+                    let x = [12, 2, 33, 414, 6, 5, 73, 8, 999, 103];
+                    x.sort((a, b) => a - b);
+                    //T08 let käännetty = x.reverse();
+                    let uusiIkkuna = window.open("vastauksia.html");
+
+                   uusiIkkuna.document.write("Luvut järjestyksessä: " + x);
+                   //uusiIkkuna.document.write("Käännetyssä järjestyksessä: " + käännetty);
+                }
+        </script>           
+    </div>
+
+    <div class = "box">
+        <p>T11</p>
+        <article>
+            <p>Tarkistetaan löytyykö nimi Krister taulukosta ("Anne", "Janne", "Krister", "Kirsi")</p>  
+            
+             <button type="button" onclick="loytyyko()">Lötyykö</button>
+        </article>
+             
+        <script>
+            function loytyyko() {
+
+                let taulukko = ["Anne", "Janne", "Krister", "Kirsi"];
+                let etsittava = "Krister";
+                let index = taulukko.indexOf(etsittava);
+                let uusiIkkuna = window.open("vastauksia.html");
+
+                    if (index !== -1) {
+                        uusiIkkuna.document.write("Nimi " + etsittava + " löytyy taulukon indeksistä " + index);
+                    } 
+                    else {
+                        uusiIkkuna.document.write("Nimeä: " + etsittava + " ei löytynyt. Indeksi tässä vaiheessa tarkistusta oli: " + index); 
+                    }
+            }
+        </script>           
+    </div>
+
+    
+
+       
+        
+    </main>
+    
+
+</body>
+</html>
+
+
+
+        
+       

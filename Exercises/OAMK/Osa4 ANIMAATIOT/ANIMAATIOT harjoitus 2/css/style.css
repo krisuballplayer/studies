@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1400px;
+    min-height: 400px;
+    margin-inline: auto;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.box {
+    width: 200px;
+    height: 186px;
+    background-color: tomato;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: shadow 6s infinite;
+
+}
+
+@keyframes shadow {
+    50% {box-shadow: 10px 20px 30px #000;}
+  }
+

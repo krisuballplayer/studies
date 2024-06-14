@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+#maincontent {
+    width: fit-content;
+    display: flex;
+    margin-inline: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+div {
+    width: 150px;
+    align-items: center;
+    padding: 10px;
+}
+
+
+#maincontent > div > img {
+    width: 100%;
+    box-shadow: 10px 10px 10px #000;
+
+}
+
+div > span {
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    top: -18px;
+}
+
+

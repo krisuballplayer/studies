@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {    
+    line-height: 1.5rem;
+    min-height: 100vh;
+    min-width: 500px;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.kontti {
+  width: 450px;
+  background-color: orange;
+  margin: 30px auto;
+  padding: 30px;
+}
+
+.lista-rivi {
+  display: flex;
+  justify-content: flex-end;
+  padding: .5em;
+}
+
+.lista-rivi label {
+  padding: .5em 1em .5em 0;
+  flex: 1;
+}
+
+.lista-rivi  input {
+  padding: 5px;
+  flex: 2;
+}
+
+.naytto {
+display: grid;
+grid-template-columns: repeat(2, 200px);
+overflow: clip;
+}
+
+.napit {
+  margin: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.napit button {
+  padding: 5px;
+}
+
+
+
+.kayttoohje {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.kayttoohje button, input[type="submit"], input[type="reset"] {
+  text-decoration: underline;
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.popup {
+  position: fixed; /* ikkuna pysyy mukana vaikka sivua scrollaa */
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -10%) scale(0); /* y- ja x-akseli. scale-funktio piillottaa ikkunan. */
+  transition: 300ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: aqua;
+  z-index: 10; /*laittaa ikkunan päällimäiseksi*/
+  min-width: 300px;
+  max-width: 450px;
+}
+
+.active {
+  transform: translate(-50%, -10%) scale(1);
+}
+
+.popup-otsikko {
+  padding: 10px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.popup-otsikko .otsikko {
+  font-size: large;
+  font-weight: bold;
+}
+
+/*toinen tapa poistaa napin "koristelu"*/
+.popup-otsikko .sulje-nappi {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: large;
+  font-weight: bold;
+}
+
+.popup-sisalto {
+  padding: 10px;
+}
+
+
+
+
+
+

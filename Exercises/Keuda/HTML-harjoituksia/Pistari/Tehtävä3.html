@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tehtävä 3</title>
+</head>
+<body>
+
+    <form>
+      <label for="vuosi">Anna vuosiluku:</label>
+      <input type="number" name="vuosi" id="vuosi"> 
+      <button type="button" onclick="myFunction()">Lähetä</button>
+    </form>
+
+<p id="vastaus"></p>
+
+<script>
+function myFunction() {
+  
+  let jäännös = document.getElementById("vuosi").value;
+  let text;
+
+  if (jäännös % 4 == 0 && jäännös % 100 !=0) {
+    text = "Vuosi on karkausvuosi!";
+  } 
+  else if (jäännös % 400 == 0) {
+    text = "Vuosi on karkausvuosi!"
+  }
+  else {
+    text ="Vuosi ei ole karkausvuosi!"
+  }
+
+  document.getElementById("vastaus").innerHTML = text;
+}
+</script>
+    
+</body>
+</html>

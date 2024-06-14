@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silmukoita</title>
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+
+<body>
+    <div class = "box">
+        <p>S07</p>
+        <article>
+            <p>Tehdään pienistä kirjaimista a, b, c, d ja e ISOJA!</p>         
+                 
+             <button type="button" onclick="muuta()">Muuta</button>
+        </article>
+             
+        <script>
+               function muuta() {
+
+                    let taulukko = ["a", "b", "c", "d", "e", "f"];
+                    let uusiTaulukko = [];
+                    let uusiIkkuna = window.open("vastauksia.html");
+
+                    for (var i = 0; i < taulukko.length; i++) {
+                        uusiTaulukko.push(taulukko[i].toUpperCase());
+                    }
+
+                    uusiIkkuna.document.write(uusiTaulukko);
+                }
+        </script>           
+    </div>
+
+    <div class = "box">
+        <p>S08</p>
+        <article>
+            <p>Monesko pariton luku kiinnostaa tästä taulukosta? [6, 7, 2, 4, 3, 8, 1, 9, 0, 3, 5, 7, 3, 6, 8, 2, 4, 3]</p> 
+            
+            <p>
+                <label for="monesko">Kerro monesko: </label>
+                <input type="text" id="monesko" name="monesko">
+            </p>  
+                 
+             <button type="button" onclick="etsi()">Etsi</button>
+        </article>
+             
+        <script>
+
+            function etsi() {
+                let x = parseInt(document.getElementById("monesko").value);                             
+                let taulukko = [6, 7, 2, 4, 3, 8, 1, 9, 0, 3, 5, 7, 3, 6, 8, 2, 4, 3]; 
+                let laskuri = 0;
+                let y = x;
+                let rivinvaihto = "<br>";
+                let uusiIkkuna = window.open("vastauksia.html");
+
+                for (let i = 0; i < taulukko.length; i++) {
+
+                            if (taulukko[i] % 2 == 0) {
+                                //uusiIkkuna.document.write("Parillinen - kierros: " + i + " numero: " + taulukko[i]);
+                            }                     
+
+                            else if (taulukko[i] % 2 != 0 ) { 
+                                laskuri += 1;
+                                y -= 1;
+                            }   
+                                    if (laskuri == x ) {
+                                        let paikka = taulukko[i]; 
+                                            uusiIkkuna.document.write(x + ". pariton luku on: " + paikka + rivinvaihto);
+                                            uusiIkkuna.document.write("Taulukko: " + taulukko);
+                                            i = taulukko.length;
+                                    }
+                }  
+
+                if (y > 0) {
+                    uusiIkkuna.document.write("Taulukossa ei ole noin monta paritonta lukua!");
+                }          
+            }
+         </script>          
+    </div>
+
+    <div class = "box">
+        <p>S12</p>
+        <article>
+            <p>Tarkastetaan jos antamasi sana on palidromi!<br> Esimerkiksi <strong>saippuakaupias</strong> on palidromi!</p> 
+            
+            <p>
+                <label for="palid">Anna sana: </label>
+                <input type="text" id="palid" name="palid">
+            </p>  
+                 
+             <button type="button" onclick="tarkasta()">Etsi</button>
+        </article>
+             
+        <script>
+            function tarkasta() {
+                let x = document.getElementById("palid").value;       
+                let y ="";                      
+                let uusiIkkuna = window.open("vastauksia.html");
+
+                for (let i = x.length -1; i >= 0;  i--) {
+                    y += x[i];
+                }
+
+                if (x == y) {
+                    uusiIkkuna.document.write("On palidromi!");
+                } 
+                else {
+                    uusiIkkuna.document.write("Ei ole palidromi!");
+                }
+            }
+         </script>          
+    </div>
+
+       
+        
+    </main>
+    
+
+</body>
+</html>
+
+
+
+        
+       

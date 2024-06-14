@@ -1,0 +1,37 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    margin-bottom: 0.8em;
+}
+
+label {
+    display: block;
+}
+
+input [type=text], [type=tel], [type=email], select {
+    width: 33ch;
+    padding: 0.2em;
+}
+
+.required::after {
+    content: " *";
+    color: #ff0000;
+}
+
+input:invalid + span {
+    display: inline-block;
+    background: url("../images/error.png") no-repeat center;
+    width: 12px;
+}
+
+input:valid + span {
+    display: inline-block;
+    background: url("../images/accept.png") no-repeat center;
+    width: 12px;
+}
+
+
+
+

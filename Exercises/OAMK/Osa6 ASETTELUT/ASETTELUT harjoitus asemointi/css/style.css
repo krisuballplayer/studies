@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    width: 150px;
+    height: 100px;
+    background-color: chocolate;
+    box-sizing: border-box;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.first {
+    position: relative;
+    left: 50px;
+}
+
+.second{
+    position: fixed;
+    left: 200px;
+    top: 150px;
+    width: 200px;
+}
+
+.third{
+    position: absolute;
+    right: 198px;
+    top: 98px;
+
+}
+
+.header{
+    width: 320px;
+    height: 50px;
+    position: sticky;
+    top: 0px;
+    /* z-index: 1; kokeilu*/
+}
+

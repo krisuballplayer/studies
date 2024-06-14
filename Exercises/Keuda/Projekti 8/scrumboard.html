@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/scrumboard.css">
+  <script type="text/javascript" src="js/scrumboard.js"></script>
+  <title>Scrumboard</title>
+</head>
+<body>
+
+  <div id="kirjoitus-alue">
+    <input type="text" id="kirjoitus-input" placeholder="Lisää tehtävä...">
+    <button id="lisaa-nappi">Lisää</button>
+  </div>
+
+  <div class="scrumboardi">
+    <div id="tekematta-lista" class="sarake" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <h3>Tekemättä</h3>
+      <ul></ul>
+    </div>
+    <div id="tyon-alla-lista" class="sarake" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <h3>Työn alla</h3>
+      <ul></ul>
+    </div>
+    <div id="valmis-lista" class="sarake" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <h3>Valmis</h3>
+      <ul></ul>
+    </div>
+  </div>
+</body>
+</html>

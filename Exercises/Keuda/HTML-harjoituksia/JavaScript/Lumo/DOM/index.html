@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <script type="text/javascript"  src="myjava.js"></script>
+</head>
+
+<body>
+
+    <div class="box">
+        <p>DOM01</p>   
+        <p id="muokattava">Muokkaa tätä tekstiä!</p>
+        <br>
+        <button onclick="muokkaa()">Muokkaa</button>
+    </div>
+
+    <div>
+        <p>DOM02</p> 
+        <label>Etunimi: </label><br />
+        <input type="text"  id="etunimi" /><br />
+        <label>Sukunimi: </label><br />
+        <input type="text"  id="sukunimi" /><br />
+        <br>
+        <button onclick="haeTiedot()">Tulosta näytölle!</button>
+        <p id="vastaus"></p>
+    </div>
+
+    <div>
+        <p>DOM03</p>
+        <p id="väri">Vaihda tämän kappaleen taustaväri!</p>
+        <br>
+           <button onclick="vaihdaVäri()">Vaihda taustaväri</button>
+        <br>
+        <!--  Ei toimi :)
+        <p id="kuva">Vaihda tämän kappaleen taustakuva!</p>
+           <button onclick="vaihdaKuva()">Vaihda taustakuva</button>
+        //-->
+    </div>
+
+    <div>
+        <p>DOM4</p>
+        <p>
+        <a id="w3r" type="text/html" hreflang="en-us" rel="nofollow" 
+        target="_self" href="https://www.w3resource.com/">
+        Hae tämän linkin tiedot</a>
+        </p>
+        <br>
+        <button onclick="linkitTiedot()">Hae linkin tiedot</button>
+    </div>
+
+    <div>
+        <p>DOM5</p>
+        <table id="sampleTable" border="1">
+            <tr><td>Row1 cell1</td>
+            <td>Row1 cell2</td></tr>
+            <tr><td>Row2 cell1</td>
+            <td>Row2 cell2</td></tr>
+        </table>
+            <br>
+            <input type="button" onclick="lisaaRivi()" value="Lisää rivi">
+    </div>
+    
+    <div>
+        <p>DOM6</p>
+        <table id="taulukko" border="1">
+            <tr><td>Row1 cell1</td>
+            <td>Row1 cell2</td></tr>
+            <tr><td>Row2 cell1</td>
+            <td>Row2 cell2</td></tr>
+            <tr><td>Row3 cell1</td>
+            <td>Row3 cell2</td></tr>
+        </table>
+            <br>
+            <label>Anna muutettava rivi</label><br />
+            <input type="text" id="rivi"><br />
+            <label>Anna muutettava solu</label><br />
+            <input type="text" id="solu"><br />
+            <label>Anna muutettava sisältö</label><br />
+            <input type="text" id="sisalto"><br />
+            <input type="button" onclick="muutaSolu()" value="Muuta solun arvo">
+    </div>
+
+    <div>
+        <p>DOM7</p>
+        <label>Anna rivien määrä</label><br />
+        <input type="text" id="rivi2"><br />
+        <label>Anna sarakkeiden määrä</label><br />
+        <input type="text" id="solu2"><br />
+        <input type="button" onclick="luoTaulukko()" value="Luo taulukko">
+        <table id="taulukko2" border="1"></table>
+    </div>
+
+</body>
+</html>

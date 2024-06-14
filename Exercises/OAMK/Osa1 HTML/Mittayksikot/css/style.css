@@ -1,0 +1,27 @@
+.container {
+    font-size: 25px;
+    padding: 5px;
+    margin: 10px;
+}
+
+p {
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 3.0em;
+    color: brown;
+}
+
+h2 {
+    font-size: 2.0em;
+    color:blueviolet; 
+}
+
+h3 {
+    font-size: 1.0em;
+    color:chocolate;
+}
+
+
+

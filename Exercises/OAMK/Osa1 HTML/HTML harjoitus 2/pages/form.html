@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order form</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1>Order from my webshop</h1>  
+        <br>     
+      
+        <form id="tilauslomake" >
+            <label for="etunimi">First name</label><br>
+            <input type="text" id="etunimi" name="etunimi" placeholder=" Krister" autofocus minlength="3" required>
+        <br>
+            <label for="sukunimi">Last name</label><br>
+            <input type="text" id="sukunimi" name="sukunimi" placeholder=" Kaattari" minlength="3" required>
+        <br>
+            <label for="osoite">Address</label><br>
+            <input type="text" id="osoite" name="osoite" required>
+        <br>
+            <label for="postinumero">Zip</label><br>
+            <input type="number" name="postinumero" id="postinumero" placeholder=" 01234" minlength="5" required >
+        <br>
+            <label for="city">City</label><br>
+            <input type="text" name="city" id="city" required >   
+        
+        <p>
+            <label for="maksutapa">Payment</label><br>
+            <select name="maksutapa" id="maksutapa" required>                    
+                <option value="mastercard">Mastercard</option>
+                <option value="visa">VISA</option>
+                <option value="amex">American Express</option>
+            </select>
+        </p>
+
+        <p>
+            <input type="checkbox" name="vastaus" id="vastaus" value="kyllä" required>
+            <label for="kylla">I want to receive a newsletter</label>
+        </p>
+        
+           <br>
+           <button type="submit" value="submit">Order</button>
+       </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+  @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {    
+    font-family: "Comic Neue", sans-serif; 
+    font-size: 1.5rem;
+    min-height: 100vh;
+    min-width: 600px;
+}
+
+.main-container {
+  max-width: 400px;
+  background-color: yellow;
+  margin:20px auto;
+  padding:20px;
+  border: 1px black solid;
+  display:flex;
+  flex-direction: column;
+  text-align: center;  
+  }
+
+.tulostaulu, .arvailu, .info {
+    padding:10px;
+}
+
+
+
+
+

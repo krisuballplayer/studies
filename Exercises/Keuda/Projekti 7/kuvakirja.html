@@ -1,0 +1,27 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="kuvakirja.js"></script>
+    <link rel="stylesheet" href="kuvakirja.css">
+    <title>Eläimet</title>
+</head>
+<body>
+  <h1>Eläimien ääniä</h1>
+  <p>Napauta kuvaa kuullaksesi kuvan eläimen ääntä.</p>
+
+  <img src="kissa.jpg" alt="Kissa" width="200" height="200" onclick="playSound('kissa-aani')">
+  <img src="koira.jpg" alt="Koira" width="200" height="200" onclick="playSound('koira-aani')">
+  <img src="hevonen.jpg" alt="Hevonen" width="200" height="200" onclick="playSound('hevonen-aani')">
+  <img src="lammas.jpg" alt="Lammas" width="200" height="200" onclick="playSound('lammas-aani')">
+  <img src="sika.png" alt="Sika" width="200" height="200" onclick="playSound('sika-aani')">
+  <img src="kana.jpg" alt="Kana" width="200" height="200" onclick="playSound('kana-aani')">
+
+  <audio id="kissa-aani" src="kissa.mp3" preload="auto"></audio>
+  <audio id="koira-aani" src="koira.mp3" preload="auto"></audio>
+  <audio id="hevonen-aani" src="hevonen.mp3" preload="auto"></audio>
+  <audio id="lammas-aani" src="lammas.mp3" preload="auto"></audio>
+  <audio id="sika-aani" src="sika.mp3" preload="auto"></audio>
+  <audio id="kana-aani" src="kana.mp3" preload="auto"></audio>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apeli</title>
+    <script type="text/javascript" src="apeli.js"></script>
+    <link rel="stylesheet" href="tyyli.css">
+</head>
+<body>
+
+   <div class="main-container">
+
+        <header>
+            <h1>Arvauspeli</h1>
+        </header>
+
+        <main>
+            <section class="tulostaulu">  
+                <p id ="tulostaulu">Voitot: 0 <br> Häviöt: 0</p>
+            </section>
+
+            <section class="arvailu">
+                <form id="lomake"> 
+                    <p><label for="luku">Anna luku 1 - 10:</label>
+                    <input type="text" id="luku" name="luku" autofocus></p>
+                </form>
+
+            <button type="button" id="tarkasta" onclick="tarkasta()">Tarkasta</button>
+            <button type="button" onclick="clean()" >Pelaa Uudestaan</button>
+         </section>
+
+         <section class="info">
+
+            <p id ="lista">Arvatut numerot: ei yhtään</p>
+            <p id ="kierrokset">Kierroksia jäljellä: 3</p>
+            <p id ="vastaus"></p>
+
+        </section>
+        </main>
+ 
+
+
+
+</div>
+
+    
+</body>
+</html>

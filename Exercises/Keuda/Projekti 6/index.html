@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neste Rally</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="myjava.js"></script>
+</head>
+<body>
+    <div class="kontti">
+        <header>
+        <h1>Auton tiedot</h1>
+        </header>
+   
+        <form>
+            <ul>
+
+            <li class="lista-rivi">
+                <label for="autoNro">Auton Numero:</label>
+                <input type="text" name="autoNro" id="autoNro" placeholder="syötä auton numero..">
+            </li>
+
+            <li class="lista-rivi">
+                <label for="merkki">Merkki:</label>
+                <input type="text" name="merkki" id="merkki">
+            </li>
+
+            <li class="lista-rivi">
+                <label for="kuski">Kuski:</label>
+                <input type="text" name="kuski" id="kuski" >
+            </li>
+
+            <li class="lista-rivi">
+                <label for="kartturi">Kartturi:</label>
+                <input type="text" name="kartturi" id="kartturi">
+            </li>
+
+            <li class="lista-rivi">
+                <label for="kSalaisuus">Kansalaisuus:</label>
+                <input type="text" name="kSalaisuus" id="kSalaisuus" >
+            </li>
+
+            <li class="lista-rivi">
+                <label for="sPosti">Sähköposti:</label>
+                <input type="email" name="sPosti" id="sPosti" >
+            </li>
+
+            <li class="lista-rivi">
+                <label for="igTili">Instagramtili:</label>
+                <input type="text" name="igTili" id="igTili" >
+            </li>
+            <div class="napit">
+                <button type="button" onclick="hae()">Hae</button>
+                <button type="button" onclick="lisaa()">Lisää</button>
+                <button type="button" onclick="poista()">Poista</button>
+                <button type="button" onclick="listaa()">Listaa</button>
+            </div>
+            </ul>
+        </form>
+
+            <div id="naytto"></div><!-- auton tiedot tulostuu tähän -->
+            <div class="kayttoohje">
+                <button type="submit" onclick="avaaIkkuna()">Käyttöohje</button>
+            </div>
+            
+            
+           
+            <div class="popup" id="popup">
+                <div class="popup-otsikko">
+                    <div class="otsikko">Käyttöohje</div>
+                    <button type="button" class="sulje-nappi" onclick="suljeIkkuna()">&times;</button>
+                </div>
+                <div class="popup-sisalto">
+                    <p><strong>Hae-nappi:</strong> Syötä auton numero ja klikkaa nappia!</p>
+                    <p><strong>Lisää-nappi:</strong> Täytä eri kenttien tiedot ja klikkaa nappia! HUOM! Mikään kenttä EI ole pakollinen!</p>
+                    <p><strong>Poista-nappi:</strong> Syötä auton numero ja klikkaa nappia!</p>
+                    
+                </div>
+
+
+            </div>
+
+       
+    </div>
+    
+
+</body>
+</html>

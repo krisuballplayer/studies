@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Comic Neue", cursive;
+    font-weight: 800;
+    font-style: normal;
+    min-height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 5px;
+}
+
+
+header {
+    grid-column: span 2;
+    text-align: center;
+    padding: 10px;
+}
+
+.box {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.box img {
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-shadow: 5px 5px 10px black;
+}
+
+nav {
+    border-right: 1px solid saddlebrown;
+}
+
+ul {
+    width: 80%;
+    list-style: none;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+ul li {
+    padding: 15px;
+}
+
+ul li a {
+    background-color: #fff;
+    color :#000;
+    text-decoration: none;
+    padding: 6px 15px;
+    border-radius: 15px;;
+}
+
+ul li a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+hr {
+    width: 80%;
+}
+
+article, p {
+    width: 80%;
+    padding: 10px;
+}
+
+article img {
+    width: 20%;
+    margin-right: 15px;
+    border: 2px solid saddlebrown;
+    float: left;
+}
+
+footer {
+    text-align: center;
+    grid-column: span 2;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-container {
+    width: 100%;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .grid-container {
+    width: 100%;
+    }
+}
+
+
+  
