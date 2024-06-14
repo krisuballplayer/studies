@@ -1,2 +1,2 @@
 # studies
-Programming projects I've made during my studies,
+Programming projects I've made during my studies.
